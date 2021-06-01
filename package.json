@@ -1,0 +1,28 @@
+{
+  "name": "api-node-js-balta",
+  "version": "1.0.0",
+  "description": "API de loja criada a partir do curso de Node.js do Balta.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarWilliam/api-node-js-balta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarWilliam/api-node-js-balta/issues"
+  },
+  "homepage": "https://github.com/CesarWilliam/api-node-js-balta#readme",
+  "dependencies": {
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "http": "0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

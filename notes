@@ -1,0 +1,14 @@
+Passos iniciais para gerar o projeto:
+- npm init -y => cria um arquivo package.json com as configs iniciais
+- criar o arquivo "server.js"
+- npm i http express debug --save
+    - comando para instalar os pacotes de http, express e debug para gerar o servidor node.js
+    - "--save" => instala os pacotes como dependencias, assim podendo ser utilizado o projeto em qualquer outro lugar
+- npm start
+    - comando configurado no package.jso, dentro dos scripts, para rodar o projeto
+- npm i nodemon --save-dev
+    - comando para instalar o nodemon apenas em dev, pois não precisa em produção
+    - nodemon é utilizado para a função de live reload, assim recarregando a aplicação a cada nova modificação
+
+Observações:
+- use strict: utilizado para o js ser mais criterioso para compilação 
