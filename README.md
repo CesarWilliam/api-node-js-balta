@@ -11,3 +11,5 @@ API de loja criada a partir do curso de Node.js do Balta.io
 - express
 - http
 - nodemon
+- mongoose
+- dotenv

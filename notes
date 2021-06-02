@@ -4,11 +4,22 @@ Passos iniciais para gerar o projeto:
 - npm i http express debug --save
     - comando para instalar os pacotes de http, express e debug para gerar o servidor node.js
     - "--save" => instala os pacotes como dependencias, assim podendo ser utilizado o projeto em qualquer outro lugar
+
 - npm start
     - comando configurado no package.jso, dentro dos scripts, para rodar o projeto
+
 - npm i nodemon --save-dev
     - comando para instalar o nodemon apenas em dev, pois não precisa em produção
     - nodemon é utilizado para a função de live reload, assim recarregando a aplicação a cada nova modificação
 
+- npm i mongoose --save 
+    - pacote para a interação com o mongoDB e o node.js
+
+- npm i dotenv --save   
+    - pacote para configurar variáveis de ambiente em dev
+
 Observações:
 - use strict: utilizado para o js ser mais criterioso para compilação 
+- controllers: 
+    - tem como missão receber as informações do request e manipular os dados, logo em seguida devolvendo os dados para o usuário
+    - é onde ficará regras de negócio e etc
