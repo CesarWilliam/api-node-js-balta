@@ -23,11 +23,11 @@ exports.post = async(req, res, next) => {
     }
 
     try {
-        // await repository.create({
-        //     name: req.body.name,
-        //     email: req.body.email,
-        //     password: md5(req.body.password + global.saltKey)
-        // });
+        await repository.create({
+            name: req.body.name,
+            email: req.body.email,
+            password: md5(req.body.password + global.saltKey)
+        });
 
         emailService.send(
             req.body.email,
