@@ -18,8 +18,28 @@ Passos iniciais para gerar o projeto:
 - npm i dotenv --save   
     - pacote para configurar variáveis de ambiente em dev
 
+- npm i guid --save 
+    - pacote para gerar um guid
+
+- npm i md5 --save 
+    - pacote para hash de strings
+
+- npm install --save @sendgrid/mail
+    - pacote para envio de email
+
 Observações:
-- use strict: utilizado para o js ser mais criterioso para compilação 
-- controllers: 
+- use strict:
+    - utilizado para o js ser mais criterioso para compilação 
+
+- controllers
     - tem como missão receber as informações do request e manipular os dados, logo em seguida devolvendo os dados para o usuário
     - é onde ficará regras de negócio e etc
+
+- find.populate()
+    - utilizado para popular as informações das propriedades relacionadas a model
+
+- SendGrid
+    - https://sendgrid.com/
+    - https://sendgrid.com/docs/for-developers/sending-email/quickstart-nodejs/
+    - https://github.com/sendgrid/sendgrid-nodejs
+    - Utilizado para envio de emails

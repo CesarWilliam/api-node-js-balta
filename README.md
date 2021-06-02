@@ -5,6 +5,7 @@ API de loja criada a partir do curso de Node.js do Balta.io
 ## Tecnologias utilizadas: ##
 - Node.js
 - MongoDB
+- SendGrid
 
 ## Pacotes utilizados: ##
 - debug
@@ -13,3 +14,5 @@ API de loja criada a partir do curso de Node.js do Balta.io
 - nodemon
 - mongoose
 - dotenv
+- guid
+- sendgrid
