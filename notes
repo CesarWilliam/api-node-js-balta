@@ -24,8 +24,11 @@ Passos iniciais para gerar o projeto:
 - npm i md5 --save 
     - pacote para hash de strings
 
-- npm install --save @sendgrid/mail
+- npm i --save @sendgrid/mail
     - pacote para envio de email
+
+- npm i jsonwebtoken --save 
+    - pacote para criar um token criptografado
 
 Observações:
 - use strict:

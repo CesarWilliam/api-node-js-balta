@@ -12,7 +12,7 @@ exports.get = async(req, res, next) => {
             data: data,
             message: 'Listagem de produtos com sucesso!',
             status: 200,
-            sucess: true
+            success: true
         });
     }
     catch(err) {
@@ -20,7 +20,7 @@ exports.get = async(req, res, next) => {
             data: err,
             message: 'Falha ao processar sua requisição',
             status: 500,
-            sucess: false                
+            success: false                
         });
     }
 };
@@ -32,7 +32,7 @@ exports.getBySlug = async(req, res, next) => {
             data: data,
             message: 'Produto encontrado com sucesso!',
             status: 200,
-            sucess: true
+            success: true
         });
     } 
     catch (err) {
@@ -40,7 +40,7 @@ exports.getBySlug = async(req, res, next) => {
             data: err,
             message: 'Falha ao processar sua requisição',
             status: 500,
-            sucess: false                
+            success: false                
         });
     }
 };
@@ -52,7 +52,7 @@ exports.getById = async(req, res, next) => {
             data: data,
             message: 'Produto encontrado com sucesso!',
             status: 200,
-            sucess: true
+            success: true
         });
     } 
     catch (err) {
@@ -60,7 +60,7 @@ exports.getById = async(req, res, next) => {
             data: err,
             message: 'Falha ao processar sua requisição',
             status: 500,
-            sucess: false                
+            success: false                
         });
     }
 };
@@ -72,7 +72,7 @@ exports.getByTag = async(req, res, next) => {
             data: data,
             message: 'Produto(s) encontrado(s) com sucesso!',
             status: 200,
-            sucess: true
+            success: true
         });
     } 
     catch (err) {
@@ -80,7 +80,7 @@ exports.getByTag = async(req, res, next) => {
             data: err,
             message: 'Falha ao processar sua requisição',
             status: 500,
-            sucess: false                
+            success: false                
         });
     }
 };
@@ -96,7 +96,7 @@ exports.post = async(req, res, next) => {
             data: null,
             message: contract.errors(),
             status: 400,
-            sucess: false                
+            success: false                
         });
         return;
     }
@@ -107,7 +107,7 @@ exports.post = async(req, res, next) => {
             data: null,
             message: 'Produto cadastrado com sucesso!',
             status: 201,
-            sucess: true
+            success: true
         });
     }
     catch (err) {
@@ -115,7 +115,7 @@ exports.post = async(req, res, next) => {
             data: err,
             message: 'Falha ao processar sua requisição',
             status: 500,
-            sucess: false                
+            success: false                
         });
     }  
 };
@@ -127,7 +127,7 @@ exports.put = async(req, res, next) => {
             data: null,
             message: 'Produto atualizado com sucesso!',
             status: 200,
-            sucess: true
+            success: true
         });
     } 
     catch (err) {
@@ -135,7 +135,7 @@ exports.put = async(req, res, next) => {
             data: err,
             message: 'Falha ao processar sua requisição',
             status: 500,
-            sucess: false                
+            success: false                
         });
     }
 };
@@ -147,7 +147,7 @@ exports.delete = async(req, res, next) => {
             data: null,
             message: 'Produto removido com sucesso!',
             status: 200,
-            sucess: true
+            success: true
         });
     } 
     catch (err) {
@@ -155,7 +155,7 @@ exports.delete = async(req, res, next) => {
             data: err,
             message: 'Falha ao processar sua requisição',
             status: 500,
-            sucess: false                
+            success: false                
         });
     }
 };
